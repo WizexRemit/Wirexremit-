@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import AuthForm from "../components/AuthForm";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
                 Fast, secure, low-cost international transfers built for people and businesses. Multi-currency wallet, local receiving details, and simple payouts.
               </p>
               <div className="flex gap-4">
-                <button className="bg-primary text-white px-6 py-3 rounded-lg shadow hover:opacity-95">Get Started</button>
+                <a href="#auth" className="bg-primary text-white px-6 py-3 rounded-lg shadow hover:opacity-95">Get Started</a>
                 <button className="border border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary hover:text-white">How it works</button>
               </div>
             </div>
@@ -53,6 +54,11 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* Auth form */}
+        <section id="auth" className="mt-10">
+          <AuthForm />
         </section>
 
         {/* Features / Why Wizex */}
